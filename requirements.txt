@@ -1,0 +1,12 @@
+numpy
+pandas
+scikit-learn
+joblib
+xgboost
+tqdm
+requests
+pillow
+segno
+opencv-python
+zxing-cpp
+python-whois

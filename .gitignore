@@ -1,0 +1,24 @@
+# Secrets
+.env
+pipeline/config/api_keys.json
+
+# Datasets, generated emails, per-URL records, caches (contain live malicious URLs)
+pipeline/data/
+pipeline/Bawer_Dataset/data/
+pipeline/Email_Test_Set_2/emails/
+pipeline/**/reputation_cache/
+pipeline/**/email_pipeline_results.csv
+pipeline/**/enriched_results.csv
+pipeline/**/results_per_url.csv
+pipeline/**/stage2_enriched.csv
+*.eml
+
+# Large retrainable models (the Bawer bundle is tracked on purpose)
+pipeline/models/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
