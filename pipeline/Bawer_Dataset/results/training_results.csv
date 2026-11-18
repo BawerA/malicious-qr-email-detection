@@ -1,0 +1,2 @@
+model,dataset,features,train_size,test_size,accuracy,precision,recall,f1,fpr,tp,fp,tn,fn,auc,threshold,best_params
+XGBoost,Bawer (augmented),63,458434,91687,0.9645424105925595,0.9645496684832505,0.9645424105925595,0.9645340134599425,0.030030769230769232,41150,1464,47286,1787,0.9950729248517356,0.5000000000000002,"{'colsample_bytree': 0.8, 'learning_rate': 0.1, 'max_depth': 8, 'min_child_weight': 3, 'subsample': 1.0}"

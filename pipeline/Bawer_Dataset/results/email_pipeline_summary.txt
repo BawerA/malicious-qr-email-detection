@@ -1,0 +1,18 @@
+BAWER MODEL - EMAIL QR PIPELINE RESULTS
+============================================================
+
+Model: bawer_63_XGBoost.joblib
+Features: 63
+Threshold: 0.5000000000000002
+
+Total emails: 1000
+Classified: 982
+
+Accuracy:  0.9786
+Precision: 0.9794
+Recall:    0.9774
+F1 Score:  0.9784
+FPR:       0.0202
+
+TP: 476  FP: 10
+FN: 11  TN: 485
