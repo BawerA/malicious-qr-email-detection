@@ -1,0 +1,91 @@
+{
+  "dataset": "Email QR Code Test Set 2 (independent validation set, committee revision - Dr. Etemadi; composition specified by advisor)",
+  "generated": "2026-07-25",
+  "composition": {
+    "total_urls": 500,
+    "benign": 250,
+    "malicious": 250,
+    "balance": "50/50",
+    "benign_mix": "225 bare-domain (Majestic Million) + 25 real full-path page URLs crawled from Majestic-ranked sites",
+    "malicious_source": "OpenPhish + Tweetfeed (unchanged from v1)",
+    "sources_note": "None of the original test set sources reused (original: Tranco, PhishTank, URLhaus)",
+    "decode_failures": 10,
+    "decode_failure_rate": "2.0%",
+    "classified": 490,
+    "classified_split": "245 benign + 245 malicious"
+  },
+  "disjointness": {
+    "checked_against": "1,579,282 unique URLs / 1,139,431 unique domains (all train/val/test/raw files, both models)",
+    "exact_url_overlap": 0,
+    "domain_overlap": 0,
+    "raw_string_overlap": 0,
+    "hostname_overlap": 0,
+    "result": "fully disjoint from both Rivas and Bawer training data (verified 4 ways, per model)"
+  },
+  "bawer_model": {
+    "accuracy": 93.88,
+    "precision": 92.16,
+    "recall": 95.92,
+    "f1": 94.0,
+    "fpr": 8.16,
+    "confusion": {
+      "TP": 235,
+      "FP": 20,
+      "TN": 225,
+      "FN": 10,
+      "n": 490
+    },
+    "fp_location": "all 20 false positives are full-path benign URLs (20 of 25); 0 of 220 bare-domain benign misclassified"
+  },
+  "rivas_replication_model": {
+    "accuracy": 52.65,
+    "precision": 51.39,
+    "recall": 98.37,
+    "f1": 67.51,
+    "fpr": 93.06,
+    "confusion": {
+      "TP": 241,
+      "FP": 228,
+      "TN": 17,
+      "FN": 4,
+      "n": 490
+    }
+  },
+  "bawer_ts1_vs_ts2": {
+    "accuracy": {
+      "test_set_1": 97.86,
+      "test_set_2": 93.88
+    },
+    "precision": {
+      "test_set_1": 97.94,
+      "test_set_2": 92.16
+    },
+    "recall": {
+      "test_set_1": 97.74,
+      "test_set_2": 95.92
+    },
+    "f1": {
+      "test_set_1": 97.84,
+      "test_set_2": 94.0
+    },
+    "fpr": {
+      "test_set_1": 2.02,
+      "test_set_2": 8.16
+    }
+  },
+  "archived_compositions": {
+    "v1_bare_domain_benign": {
+      "benign_mix": "250 bare / 0 full-path",
+      "bawer_accuracy": 97.96,
+      "bawer_fpr": "<0.15 (0 FP)",
+      "folder": "v1_archive_bare_domain_benign"
+    },
+    "v2_mixed_benign_40pct": {
+      "benign_mix": "150 bare / 100 full-path",
+      "bawer_accuracy": 84.05,
+      "bawer_fpr": 27.87,
+      "folder": "v2_archive_mixed_benign_40pct"
+    },
+    "note": "v3 (225/25) is the composition specified by the advisor and is the reported result. All runs archived with per-URL results."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "rivas": {
+    "stage1": {
+      "n": 490,
+      "TP": 241,
+      "FP": 228,
+      "TN": 17,
+      "FN": 4,
+      "accuracy": 52.65,
+      "precision": 51.39,
+      "recall": 98.37,
+      "f1": 67.51,
+      "fpr": 93.06,
+      "suspicious": 0
+    },
+    "stage2": {
+      "n": 485,
+      "TP": 242,
+      "FP": 232,
+      "TN": 9,
+      "FN": 2,
+      "accuracy": 51.75,
+      "precision": 51.05,
+      "recall": 99.18,
+      "f1": 67.41,
+      "fpr": 96.27,
+      "suspicious": 5
+    },
+    "precision_change_pp": -0.34,
+    "recall_change_pp": 0.81,
+    "fpr_change_pp": 3.21
+  },
+  "bawer": {
+    "stage1": {
+      "n": 490,
+      "TP": 235,
+      "FP": 20,
+      "TN": 225,
+      "FN": 10,
+      "accuracy": 93.88,
+      "precision": 92.16,
+      "recall": 95.92,
+      "f1": 94.0,
+      "fpr": 8.16,
+      "suspicious": 0
+    },
+    "stage2": {
+      "n": 489,
+      "TP": 242,
+      "FP": 22,
+      "TN": 223,
+      "FN": 2,
+      "accuracy": 95.09,
+      "precision": 91.67,
+      "recall": 99.18,
+      "f1": 95.28,
+      "fpr": 8.98,
+      "suspicious": 1
+    },
+    "precision_change_pp": -0.49,
+    "recall_change_pp": 3.26,
+    "fpr_change_pp": 0.82
+  }
+}
