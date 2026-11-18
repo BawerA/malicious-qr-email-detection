@@ -1,0 +1,17 @@
+EMAIL QR CODE DETECTION PIPELINE - RESULTS SUMMARY
+============================================================
+
+Model: our_63_XGBoost.joblib
+Features: 63
+
+Total emails: 1000
+Classified: 982
+
+Accuracy:  0.4878
+Precision: 0.4915
+Recall:    0.9446
+F1 Score:  0.6465
+FPR:       0.9616
+
+TP: 460  FP: 476
+FN: 27  TN: 19

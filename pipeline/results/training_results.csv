@@ -1,0 +1,3 @@
+accuracy,precision,recall,f1,fpr,auc,model,feature_set,num_features,classification,val_accuracy,val_f1,threshold,best_params
+0.9507692307692308,0.9506008670614913,0.9507692307692308,0.9505499888948514,0.02842468378689153,0.9890689848848901,XGBoost,rivas_24,24,binary,0.9514923076923076,0.951271632147678,0.6900000000000004,"{'colsample_bytree': 0.8, 'learning_rate': 0.1, 'max_depth': 8, 'min_child_weight': 1, 'subsample': 0.8}"
+0.9560102564102564,0.9558955922828174,0.9560102564102564,0.9558074355838211,0.02422384055193561,0.9905837645355007,XGBoost,our_63,63,binary,0.9564923076923076,0.9563051792174156,0.6900000000000004,"{'colsample_bytree': 0.8, 'learning_rate': 0.1, 'max_depth': 8, 'min_child_weight': 1, 'subsample': 0.8}"
